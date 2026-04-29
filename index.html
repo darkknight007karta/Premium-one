@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Royal Celebration 🥂</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #ffd700;
+      --accent: #ff4d94;
+      --glass: rgba(255, 255, 255, 0.08);
+    }
+
+    body {
+      margin: 0; font-family: 'Poppins', sans-serif; color: white;
+      background: radial-gradient(circle at center, #2c003e 0%, #000000 100%);
+      overflow: hidden; height: 100vh; display: flex; justify-content: center; align-items: center;
+    }
+
+    /* Ambient Background Glow */
+    .glow-orb {
+      position: absolute; width: 400px; height: 400px; background: radial-gradient(circle, rgba(255, 77, 148, 0.2) 0%, transparent 70%);
+      filter: blur(50px); z-index: 0; animation: move 20s infinite alternate;
+    }
+
+    @keyframes move { from { transform: translate(-20%, -20%); } to { transform: translate(20%, 20%); } }
+
+    .card {
+      background: var(--glass); backdrop-filter: blur(30px); -webkit-backdrop-filter: blur(30px);
+      padding: 40px 25px; border-radius: 40px; width: 85%; max-width: 420px;
+      border: 1px solid rgba(255, 255, 255, 0.15); box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+      position: relative; z-index: 10; transform-style: preserve-3d; transition: 0.5s;
+    }
+
+    /* Premium Photo Frame */
+    .photo-container {
+      position: relative; width: 180px; height: 180px; margin: 0 auto 25px;
+      padding: 8px; background: linear-gradient(45deg, var(--gold), var(--accent));
+      border-radius: 50%; box-shadow: 0 0 30px rgba(255, 77, 148, 0.4);
+    }
+    .photo-frame {
+      width: 100%; height: 100%; border-radius: 50%; overflow: hidden; border: 4px solid #000;
+    }
+    .photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+
+    .hb-text {
+      font-family: 'Playfair Display', serif; font-size: 2.8em; margin: 0;
+      background: linear-gradient(to right, #fff, var(--gold), #fff);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      letter-spacing: 2px;
+    }
+
+    .status-bar {
+      height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; margin: 20px 0; overflow: hidden;
+    }
+    .status-fill {
+      height: 100%; width: 0%; background: var
